@@ -36,7 +36,7 @@ router.post('./login', async (req, res) => {
 });
 
 //creacion de usuario
-router.post('./signup', (req, res) => {
+router.post('./signup', async (req, res) => {
     const { body } = req;
     // Buscar usuario por email
     const user = await sequelize.models.users.findOne({

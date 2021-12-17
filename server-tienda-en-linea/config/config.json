@@ -1,21 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
+    "username": "erik",
+    "password": "root",
+    "database": "ecommerce_api",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "port": "3306",
+    "dialect": "mariadb"
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "database_test",
+    "password": "root",
+    "database": "ecommerce_api",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "port": "3306",
+    "dialect": "mariadb"
   },
   "production": {
     "username": "root",
-    "password": null,
+    "password": "root",
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql"

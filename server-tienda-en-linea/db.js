@@ -5,7 +5,7 @@ const Review = require('./models/Review');
 const User = require('./models/User');
 const Order = require('./models/Order');
 
-const sequelize = new Sequelize('ecommerce-api', 'root', 'root', {
+const sequelize = new Sequelize('ecommerce-api', 'erik', 'root', {
   host: 'localhost',
   dialect: 'mariadb',
   logging: false,
@@ -22,7 +22,7 @@ for (let model of models) {
   model(sequelize);
 }
 
-const { products, reviews, users, orders } = equelize.models;
+const { products, reviews, users, orders } = sequelize.models;
 reviews.belongsTo(products);
 orders.belongsTo(users);
 orders.belongsTo(products);
